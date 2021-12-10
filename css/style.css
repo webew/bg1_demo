@@ -30,6 +30,9 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
+nav ul {
+    flex-direction: row;
+}
 #burger{
     display: none;
 }
@@ -66,15 +69,20 @@ nav > div:nth-child(2){
 nav button:hover {
 	background-color: rgb(21, 50, 67);
 }
-
+.visible{
+    display: flex;
+}
 @media screen and (max-width:921px){
     #burger{
         display: block;
     }
+    .visible{
+        display: none;
+    }
     #menu_large{
     }
     #menu_large ul{
-        display: none;
+        
         position: absolute;
         left: 0;
         top: 100px;
