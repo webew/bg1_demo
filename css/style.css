@@ -30,6 +30,10 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
+#burger{
+    display: none;
+}
+
 nav > div:nth-child(2){
     display: flex;
     gap: 5rem;
@@ -61,4 +65,35 @@ nav > div:nth-child(2){
 }
 nav button:hover {
 	background-color: rgb(21, 50, 67);
+}
+
+@media screen and (max-width:921px){
+    #burger{
+        display: block;
+    }
+    #menu_large{
+    }
+    #menu_large ul{
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100px;
+        flex-direction: column;
+        width: 100vw;
+        background-color: rgb(26, 108, 122);
+        gap:0;
+    }
+    #menu_large ul li{
+        width: 100%;
+        text-align: center;
+    }
+    #menu_large ul li a{
+        padding: 0.5rem 0;
+        display: block;
+        width: 100%;
+
+    }
+    #menu_large button{
+        display: none;
+    }
 }
