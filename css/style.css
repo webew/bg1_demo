@@ -82,6 +82,52 @@ nav button:hover {
 .visible{
     display: flex;
 }
+
+.headerSlogan{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.headerSlogan h1{
+    font-size: 50px;
+    margin: 0 0 20px 0;
+}
+.headerSlogan h2{
+    font-size: 28px;
+    margin: 0 0 20px 0;
+}
+.headerSlogan p{
+    max-width: 700px;
+    font-size: 16px;
+    margin: 0 0 50px 0;
+    text-align: center;
+    line-height: 24px;
+}
+.headerSlogan button{
+    padding: 16px 40px;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+    border: 2px solid white;
+}
+.headerSlogan div{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+}
+.headerSlogan button:nth-child(1){
+    color: white;
+    background-color: transparent;
+}
+.headerSlogan button:nth-child(2){
+    color: rgb(26, 108, 122)
+}
 @media screen and (max-width:921px){
     #burger{
         display: block;
